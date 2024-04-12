@@ -4,172 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Hernandez</title>
 
-    <link rel="stylesheet" href="./styles.css">
-    <title>Alex H</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
-
-        <!-- NAVIGATION BAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-shadow"">
-            <div class=" container-fluid">
-            <a class="navbar-brand" href="index.html">Alex Hernandez</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://blog.alexelfuerte.com/">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://blog.alexelfuerte.com/series/movie-reviews">Movie Reviews</a>
-                    </li>
-                </ul>
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-color" href="./index.html">
+                    <image id="logo" src="./images/alexhernandez-color.jpg"></image>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link nav-color" aria-current="page" href="https://www.linkedin.com/in/alex47/">LinkedIn</a>
+                        <a class="nav-link nav-color" href="#">Resume</a>
+                    </div>
+                </div>
             </div>
         </nav>
 
-        <!-- MAIN HEADER -->
-        <div class="row">
+        <div class="row heading">
             <div class="col">
-                <div id="main-splash">
-                    <img id="my-picture" src="professional_alex_2.jpg" title="A very handsome latino man"
-                        alt="A very handsome latino man">
-                    <h1>Hi, I'm Alex</h1>
-                    <h3>I'm a Systems Engineer in &#65039;&#10084; with Cloud</h3>
+                <h3 class="tertiary-text">Cloud Engineering. AI/ML. Leadership.</h3>
+                <h1 class="primary-text bold">Alex Hernandez</h1>
+                <h2 class="secondary-text bold">Cloud Engineer @ AlixPartners</h2>
+
+                <div class="row add-margin">
+                    <div class="col-9">
+                        <p class="display-paragraph">
+                            As a cloud engineer, I spend my time writing scripts to automate complex processes, saving
+                            the firm
+                            <strong>thousands of dollars per month</strong>. I also configure and deploy various AI/ML
+                            solutions
+                            through Azure and Databricks.
+                        </p>
+                    </div>
                 </div>
+
+                <div class="row add-margin">
+                    <div class="col">
+                        <button id="view-resume">View My Resume</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <image class="round-img" src="./images/alexhernandez.jpg"></image>
             </div>
         </div>
 
-        <!-- CARDS -->
+        <hr class="hr-style">
+
         <div class="row">
             <div class="col">
-                <div class="card card-shadow grow" style="width: 18rem;">
-                    <div class="card-header">
-                        Current Responsibilities
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Create and maintain PowerShell scripts for automation</li>
-                        <li class="list-group-item">Deploy web apps with Azure DevOps</li>
-                        <li class="list-group-item">Oversee and manage development of Palantir environments</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-shadow grow" style="width: 18rem;">
-                    <div class="card-header">
-                        Qualifications
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a>Microsoft
-                                Certified: Azure Administrator (AZ-104)</a>
-                        </li>
-                        <li class="list-group-item"><a>Microsoft
-                                Certified: Azure Fundamentals (AZ-900)</a>
-                        </li>
-                        <li class="list-group-item">4+ years Azure experience</li>
-                    </ul>
-                    <div class="card-footer">
-                        <a href="https://www.linkedin.com/in/alex47/">Full Resume on LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-shadow grow" style="width: 18rem;">
-                    <div class="card-header">
-                        Proficiencies
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Microsoft Azure & Azure DevOps</li>
-                        <li class="list-group-item">PowerShell and Bash scripting</li>
-                        <li class="list-group-item">Databricks platform administration</li>
-                    </ul>
-                </div>
+                <h3 class="display-paragraph section-title">Expertise in Cloud and AI</h3>
             </div>
         </div>
 
-        <!-- ABOUT -->
-        <div class="row" id="about">
+        <div class="row">
             <div class="col">
-                <h2>About Me</h2>
-                <p id="about-text">
-                    I was born on February 3, 2000 in The Woodlands, Texas.
+                <p class="display-paragraph" id="description-text">
+                    As a cloud engineer I spend my time automating application deployments and developing AI/ML
+                    solutions. However, there is a more succinct way of describing my impact:
                     <br>
                     <br>
-                    Some celebrities who have birthdays on February 3 include: Sean Kingston,
-                    Daddy Yankee, Andre Ellington, and Isla Fisher.
+                    <span class="emphasize">I save businesses time and money.</span>
                     <br>
                     <br>
-                    My favorite superheroes are the Silver Surfer, Daredevil, and Batman (in that order).
-                    <br>
-                    <br>
-                    My favorite food is an Italian Sub.
-                    <br>
-                    <br>
-                    I played many sports growing up, like football, track, cross country, boxing, baseball, and
-                    wrestling.
-                    <br>
-                    <br>
-                    These days I spend a lot of time wrestling/practicing Brazilian Jiu Jitsu, but I also enjoy watching movies.
-                    <br>
-                    <br>
-                    (Ask me about any movie and I've probably seen it!)
+                    Whether I'm saving hundreds of hours of valuable labor by automating data pipelines, or providing a company
+                    critical insights leveraging AI, <span class="inline-emphasize"><em>I deliver high-quality results.</em></span>
                 </p>
             </div>
         </div>
 
-        <!-- CONTACT -->
-        <div class="row" id="contact">
+        <div class="row">
             <div class="col">
-                <h2>Contact Me</h2>
-                <a href="https://www.linkedin.com/in/alex47/"><img class="grow" id="linkedin-logo" src="linkedin.png"
-                        alt="LinkedIn logo"></a>
-                <h4>It's best to contact me through LinkedIn</h4>
-                <h5 id="h5-text">I promise I respond fast!</h5>
-            </div>
-        </div>
-
-        <!-- BLOG LINK -->
-        <div class="row" id="read-blog">
-            <div class="col">
-                <h3>Read About How I Created This Website!</h3>
-                <p>I cannot keep up with all the requests I've gotten for a blog post on how I made this website (I've
-                    been asked over 2 times!), so please feel free to <strong><a
-                            href="https://blog.alexelfuerte.com/creating-my-portfolio">read about my experience making
-                            my web portfolio</a></strong>.
-                </p>
-            </div>
-        </div>
-
-        <!-- VISITOR COUNTER -->
-        <div class="row" id="counter-wrapper">
-            <div class="col">
-                <p>Website visits: <strong><a id="counter"></a></strong></p>
+                <h3 class="display-paragraph section-title">Proficiencies</h3>
             </div>
         </div>
     </div>
 
-    <!-- COUNTER SCRIPT -->
-    <script src="./counter.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
