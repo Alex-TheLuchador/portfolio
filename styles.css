@@ -92,3 +92,11 @@ nav.navbar {
 .navbar-toggler {
     background-color: rgba(16, 228, 199, 1) !important;
 }
+
+.col > ul {
+    color: rgb(206, 206, 206);
+}
+
+.row-start {
+    margin-top: 5% !important;
+}
