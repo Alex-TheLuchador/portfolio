@@ -43,6 +43,11 @@ onMounted(() => {
   overflow: hidden;
 }
 
+.description h2,
+.description h3 {
+  text-align: center;
+}
+
 .description p,
 .description ul,
 .description li {
