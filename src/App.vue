@@ -21,8 +21,8 @@ import Carousel from './components/Carousel.vue';
 #starfleet-image {
   text-align: center;
 
-  background-image: url('../../images/starfleet.png');
-  background-size: 35rem;
+  background-image: url('../images/starfleet2.png');
+  background-size: 40rem;
   background-position: center;
   background-repeat: no-repeat;
 }
