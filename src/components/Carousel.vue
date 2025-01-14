@@ -21,8 +21,8 @@ export default {
     <div class="carousel">
         <router-view></router-view>
         <span id="carousel-controls">
-            <button id="prev-button" @click="prevPage">Previous</button>
-            <button id="next-button" @click="nextPage">Next</button>
+            <img src="../../images/left-arrow.png" id="prev-button" @click="prevPage"></img>
+            <img src="../../images/right-arrow.png" id="next-button" @click="nextPage"></img>
         </span>
     </div>
 </template>
@@ -32,5 +32,9 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#next-button {
+    margin-left: 15rem;
 }
 </style>
