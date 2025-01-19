@@ -1,26 +1,25 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-
-const descriptionVisible = ref(false);
-
-onMounted(() => {
-  setTimeout(() => {
-    descriptionVisible.value = true;
-  }, 100); // Delay to start the animation
-});
+import { ref } from 'vue';
 </script>
 
 <template>
   <div class="center-container">
-    <div :class="['description', { 'visible': descriptionVisible }]">
-      <h2>STARFLEET LOGS</h2>
+    <div class="typewriter description">
+      <h2>STARFLEET PROFILE</h2>
+      <br>
       <h3>BASIC INFO</h3>
-      <p><strong>NAME:</strong> Alex Hernandez</p>
-      <p><strong>DIVISION:</strong> Operations and Engineering (Cloud, AI, DevOps)</p>
-      <p><strong>RANK:</strong> Lieutenant Commander</p>
-      <p><strong>PRIMARY SKILLS:</strong> Microsoft Azure, PowerShell, IaC</p>
-      <p><strong>RESIDENCE:</strong> Earth (Spring, Texas)</p>
-      <p><strong>MORE INFO:</strong> <a href="https://www.linkedin.com/in/itsalexh/">LinkedIn</a>, <a
+      <br>
+      <p><strong>NAME:</strong><br>--- Alex Hernandez</p>
+      <br>
+      <p><strong>DIVISION:</strong><br>--- Operations & Engineering<br>----- (Cloud, AI, DevOps)</p>
+      <br>
+      <p><strong>RANK:</strong><br>--- LT. Commander</p>
+      <br>
+      <p><strong>PRIMARY SKILLS:</strong><br>--- Microsoft Azure,<br>--- PowerShell,<br>IaC</p>
+      <br>
+      <p><strong>RESIDENCE:</strong><br>--- Earth (Spring, Texas)</p>
+      <br>
+      <p><strong>MORE INFO:</strong><br>--- <a href="https://www.linkedin.com/in/itsalexh/">LinkedIn</a><br>--- <a
           href="https://github.com/Alex-TheLuchador">GitHub</a></p>
     </div>
 
@@ -33,7 +32,6 @@ onMounted(() => {
 .description h3,
 .description p {
   position: relative;
-  overflow: hidden;
 }
 
 .description h2,
@@ -45,24 +43,60 @@ onMounted(() => {
   text-align: left;
 }
 
-.description h2::before,
-.description h3::before,
-.description p::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(11, 161, 6);
-  transition: transform 0.65s ease-in-out, background-color 0.5s ease-in-out 0.65s;
-  transform: translateX(0);
+.description a {
+  color: #fff;
+  font-family: monospace;
+  font-size: 0.9rem;
 }
 
-.description.visible h2::before,
-.description.visible h3::before,
-.description.visible p::before {
-  transform: translateX(100%);
-  background-color: transparent;
+/* Print first: h2, second: h3, third: p */
+.typewriter h2,
+.typewriter h3,
+.typewriter p {
+  color: #fff;
+  font-family: monospace;
+  font-size: 0.9rem;
+
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+
+  /* border-right: .15em solid orange; */
+  /* The typwriter cursor */
+
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+
+  letter-spacing: .15em;
+  /* Adjust as needed */
+
+  animation:
+    typing 3.5s steps(30, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange
+  }
 }
 </style>

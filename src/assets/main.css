@@ -42,7 +42,7 @@ body {
 }
 
 .description * {
-  max-width: 30ch;
+  max-width: 45ch;
   overflow-wrap: break-word;
 }
 
