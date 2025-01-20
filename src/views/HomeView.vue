@@ -15,7 +15,7 @@ import { ref } from 'vue';
       <br>
       <p><strong>RANK:</strong><br>--- LT. Commander</p>
       <br>
-      <p><strong>PRIMARY SKILLS:</strong><br>--- Microsoft Azure,<br>--- PowerShell,<br>IaC</p>
+      <p><strong>PRIMARY SKILLS:</strong><br>--- Microsoft Azure,<br>--- PowerShell, IaC</p>
       <br>
       <p><strong>RESIDENCE:</strong><br>--- Earth (Spring, Texas)</p>
       <br>
