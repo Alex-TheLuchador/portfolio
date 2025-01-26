@@ -25,5 +25,6 @@ import Carousel from './components/Carousel.vue';
   background-size: 40rem;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 8rem;
 }
 </style>

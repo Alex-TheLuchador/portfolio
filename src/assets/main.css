@@ -1,6 +1,5 @@
 html,
 body {
-  height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
@@ -10,15 +9,15 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 0px;
 }
 
 #prev-button {
-  margin-right: 5rem;
+  margin-right: 10rem;
 }
 
 #next-button {
-  margin-left: 5rem;
+  margin-left: 10rem;
 }
 
 * {
