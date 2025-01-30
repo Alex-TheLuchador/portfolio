@@ -11,4 +11,13 @@
     </ul>
 </template>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  text-align: center;
+}
+
+.move-list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+</style>
