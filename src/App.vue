@@ -7,7 +7,7 @@
       <li id="subtitle">Systems Engineer</li>
       <br>
       <li class="move-list"><a href="https://github.com/Alex-TheLuchador">Github</a></li>
-      <li class="move-list"><a href="https://www.linkedin.com/in/itsalexh">LinkedIn & Contact</a></li>
+      <li class="move-list"><a href="https://www.linkedin.com/in/itsalexh">LinkedIn / Contact</a></li>
     </ul>
 </template>
 
