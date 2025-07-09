@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, type KeyboardEvent, type JSX } from "react";
 import "./Terminal.css";
 
-/** Static responses for simple commands */
+/* Static responses for simple commands */
 const COMMANDS: Record<string, string> = {
   help: "Available commands:\n• about\n• clear\n• contact\n• projects\n• skills\n• wins",
   about: "Alex Hernandez is a legendary systems engineer building solutions with Azure, AWS, Python, SQL, Databricks, and more.\nCurrent role: Senior Systems Engineer @ AlixPartners",
@@ -16,9 +16,9 @@ type Line = string | JSX.Element;
 
 export default function Terminal(): JSX.Element {
   const [lines, setLines] = useState<Line[]>([
-    "Welcome to A Legendary Engineer's eXperience (A.L.E.X).",
-    "",
-    'To begin, type: start\n'
+    <>Welcome to <span className="highlight">A</span> <span className="highlight">L</span>egendary <span className="highlight">E</span>ngineer's e<span className="highlight">X</span>perience (<span className="highlight">A.L.E.X</span>).</>,
+    <>This is a creation of <span className="highlight">Alex Hernandez</span> - <span className="highlight">Data and AI Systems Engineer</span></>,
+    <>To see list of commands, type: <span className="command-hint">help</span></>
   ]);
 
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -34,19 +34,6 @@ export default function Terminal(): JSX.Element {
 
     if (cmd === "clear") {
       setLines([]);
-      return;
-    }
-
-    if (cmd === "start") {
-      append(
-        <>
-          <span className="start-message">
-            This is the creation of Alex Hernandez.
-          </span>
-          <br />
-          Type "help" for available commands.
-        </>
-      );
       return;
     }
 
