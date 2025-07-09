@@ -1,0 +1,45 @@
+.terminal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.terminal {
+  width: 650px;
+  max-width: 100%;
+  border: 2px solid var(--green);
+  padding: 1rem;
+  background: #000;
+}
+
+.output {
+  white-space: pre-wrap;
+  max-height: 300px;
+  overflow-y: auto;
+  color: var(--green);
+  margin: 0;
+}
+
+.prompt-line {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.prompt-line span { margin-right: 0.5rem; }
+
+.prompt-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--green-dim);
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.user-input-line {
+  color: var(--green-dim);
+}
