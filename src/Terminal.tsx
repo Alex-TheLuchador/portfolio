@@ -16,9 +16,9 @@ type Line = string | JSX.Element;
 
 export default function Terminal(): JSX.Element {
   const [lines, setLines] = useState<Line[]>([
-    <>Welcome to <span className="highlight">A</span> <span className="highlight">L</span>egendary <span className="highlight">E</span>ngineer's e<span className="highlight">X</span>perience (<span className="highlight">A.L.E.X</span>).</>,
+    <>Welcome to A Legendary Engineer's eXperience (<span className="highlight">A.L.E.X</span>).</>,
     <>This is a creation of <span className="highlight">Alex Hernandez</span> - <span className="highlight">Data and AI Systems Engineer</span></>,
-    <>To see list of commands, type: <span className="command-hint">help</span></>
+    <>To see list of commands, type: <span className="highlight">help</span></>
   ]);
 
   const inputRef = useRef<HTMLInputElement | null>(null);

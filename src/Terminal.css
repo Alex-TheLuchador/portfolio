@@ -8,11 +8,15 @@
 }
 
 .terminal {
-  width: 650px;
-  max-width: 100%;
   border: 2px solid var(--green);
   padding: 1rem;
   background: #000;
+  width: 80vw;
+  height: 40vh;
+  min-width: 80vw;
+  max-width: 80vw;
+  min-height: 40vh;
+  max-height: 40vh;
 }
 
 .output {
@@ -28,7 +32,9 @@
   margin-top: 0.5rem;
 }
 
-.prompt-line span { margin-right: 0.5rem; }
+.prompt-line span {
+  margin-right: 0.5rem;
+}
 
 .prompt-input {
   flex: 1;
